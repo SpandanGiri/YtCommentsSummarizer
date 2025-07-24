@@ -1,0 +1,10 @@
+{
+  "manifest_version": 3,
+  "name": "Youtube Comments Summarizer Chrome Extension",
+  "version": "1.0.0",
+  "description": "Youtube Comments Summarizer Chrome extension",
+  "action": {
+    "default_popup": "index.html"
+  },
+  "permissions": []
+}
