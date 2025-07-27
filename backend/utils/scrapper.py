@@ -22,8 +22,6 @@ def scarp_comments(url):
 
     wait = WebDriverWait(driver,10)
     driver.get(url)
-    #driver.get("https://www.youtube.com/watch?v=T646W5pA6LE")
-
     
 
     for item in range(3): #by increasing the highest range you can get more content

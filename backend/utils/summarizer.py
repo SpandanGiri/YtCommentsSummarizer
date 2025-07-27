@@ -10,7 +10,7 @@ def commentsSummariszer(url):
     comments = sc.comments
 
 
-    chat_prompt = '''Hi I will provide you with some comments of youtube video , understand each comment and give me a summarized verison
+    chat_prompt = '''Hi I will provide you with some comments of youtube video , understand each comment and give me a summarized verison of all the combined comments
     using the comments do not add extra information other than from the comments
 
     Here are the following comments:

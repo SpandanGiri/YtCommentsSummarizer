@@ -17,7 +17,7 @@ origins = [
 
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=origins,
+    allow_origins=["*"],
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
@@ -25,6 +25,7 @@ app.add_middleware(
 
 @app.post("/")
 async def comments_sumarizer(url:Url):
+    print('inside comments summarizer')
     print(url)
     summarizer.commentsSummariszer(url.content)
 
