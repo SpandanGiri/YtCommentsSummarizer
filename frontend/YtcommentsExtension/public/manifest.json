@@ -4,7 +4,12 @@
   "version": "1.0.0",
   "description": "Youtube Comments Summarizer Chrome extension",
   "action": {
-    "default_popup": "index.html"
+    "default_popup": "index.html",
+    "default_icon": {    
+      "16": "images/yts.png",
+      "48": "images/yts.png",
+      "128": "images/yts.png" 
+    }
   },
   "permissions": [
     "tabs"

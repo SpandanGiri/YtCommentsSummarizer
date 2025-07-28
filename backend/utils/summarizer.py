@@ -25,5 +25,4 @@ def commentsSummariszer(url):
 
     response = ollama.chat(model='llama3.2',messages=[{"role":"user","content":chat_prompt}])
 
-    print("Summarized comments are :")
-    print(response.message.content)
+    return response.message.content

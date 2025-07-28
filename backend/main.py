@@ -2,6 +2,7 @@ from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel
 import backend.utils.summarizer as summarizer
+from fastapi.responses import JSONResponse
 
 
 class Url(BaseModel):
@@ -27,7 +28,8 @@ app.add_middleware(
 async def comments_sumarizer(url:Url):
     print('inside comments summarizer')
     print(url)
-    summarizer.commentsSummariszer(url.content)
+    summarized_output = summarizer.commentsSummariszer(url.content)
+    return JSONResponse(content={"summary": summarized_output})
 
 
 if __name__ == "__main__":
